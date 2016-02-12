@@ -7,14 +7,25 @@
 
 # Site settings
 title: Tao SandBox
+tagline: 'Journal, TIL, Documenting'
 email: soukoulis.tasos@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Documenting my progress as I learn programming and computer science.
   Topics: C, JS, Rust, Datastructures, computer science, life and tackling problems.
 baseurl: "" # the subpath of your site, e.g. /blog
+permalink: pretty
 url: "http://taosx.github.io" # the base hostname & protocol for your site
 twitter_username: taosx
 github_username:  taosx
+paginate: 5
+
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-paginate
+  - jekyll-gist
